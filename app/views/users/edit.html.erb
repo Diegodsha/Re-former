@@ -12,16 +12,18 @@
         </div>
     <% end %> 
 
-    <%=form.label :username%>
+<div>
+<%=form.label :username%>
 <%=form.text_field :username, placeholder: "Your user name here"%>
-
+</div>
+<br>
+<div>
 <%=form.label :email%>
 <%=form.email_field :email, placeholder: "example@example.com", value: 'example@admin.com'%>
-
-
-<%=form.label :password%>
-<%=form.password_field :password %>
-
+</div>
+<br>
+<div>
 <%=form.submit%>
+</div>
 
  <% end %>

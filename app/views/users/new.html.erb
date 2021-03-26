@@ -22,16 +22,22 @@
  %>
 
  <%= form_with(model: @user, local: true) do |form|%>
+ <div>
 <%=form.label :username%>
 <%=form.text_field :username, placeholder: "Your user name here"%>
-
+</div>
+<br>
+<div>
 <%=form.label :email%>
 <%=form.email_field :email, placeholder: "example@example.com", value: 'example@admin.com'%>
-
-
+</div>
+<br>
+<div>
 <%=form.label :password%>
 <%=form.password_field :password %>
-
+</div>
+<br>
+<div>
 <%=form.submit%>
-
+</div>
  <% end %>
