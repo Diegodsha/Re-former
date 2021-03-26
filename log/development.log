@@ -58,3 +58,7 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 35ms (Views: 30.1ms | Allocations: 4510)
 
 
+Started GET "/users/new_user_path?username=&email=diegodsha%40hotmail.com&password=[FILTERED]" for 127.0.0.1 at 2021-03-26 11:38:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/new_user_path"):
+  
