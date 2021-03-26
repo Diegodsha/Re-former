@@ -1,0 +1,27 @@
+
+ <%= form_with(model: @user, local: true) do |form|%>
+    <% if @user.errors.any? %>
+    <div id="error_explanation">
+    <h2><%= pluralize(@user.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+    <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+        </ul>
+        </div>
+    <% end %> 
+
+    <%=form.label :username%>
+<%=form.text_field :username, placeholder: "Your user name here"%>
+
+<%=form.label :email%>
+<%=form.email_field :email, placeholder: "example@example.com", value: 'diego@admin.com'%>
+
+
+<%=form.label :password%>
+<%=form.password_field :password %>
+
+<%=form.submit%>
+
+ <% end %>
